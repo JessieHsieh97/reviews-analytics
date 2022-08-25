@@ -15,5 +15,14 @@ for d in data:
 	sum_len = sum_len + len(d) #目前已累積的留言總長度加上下一筆的留言長度
 print('The average length of review is', sum_len/len(data)) #需離開for loop才不會每一次加總的平均都算出來
 
-
+#filter
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('Totall', len(new), 'data length less than 100')
+print('----------------------------')
+print(new[0])
+print('----------------------------')
+print(new[1])
 		
